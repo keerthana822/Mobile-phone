@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile phones</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,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">
+    <!-- aos -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- bootstrap-->
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <!--Favicon  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asset&family=Roboto:ital,wght@0,100..900;1,100..900&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <header>
+        <nav class=" navbar navbar-expand-lg bg-pink-950 fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand fs-2 fw-bold !text-yellow-200" href="#">
+                    Mobile Hub
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-4">
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold !text-red-100 fs-4" href="#home">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold !text-red-100 fs-4" href="#products">Products</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold !text-red-100 fs-4" href="#about">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold !text-red-100 fs-4" href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-3" type="search" placeholder="Search">
+
+                        <button class="btn btn-success w-24 " type="submit">
+                            Search
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       
+
+        <section id="home" class="banner-section">
+
+            <div class="container h-75">
+
+                <div class="row align-items-center min-vh-100 pt-5">
+
+                    <!-- Banner Content -->
+
+                    <div class="col-12 col-md-6 text-center text-md-start">
+
+                        <h1 class="display-4 fw-bold !text-blue-900">
+                            Find Your Perfect Smartphone
+                        </h1>
+
+                        <p class="fs-5 mt-3 text-white" >
+                            Explore the latest smartphones from trusted brands
+                            at affordable prices.
+                        </p>
+
+                        <a href="#products" class="btn btn-primary px-4 py-2 mt-3">
+                            Shop Now
+                        </a>
+
+                    </div>
+
+
+                    <!-- Banner Image -->
+
+                    <!-- <div class="col-12 col-md-6 text-center mt-5 mt-md-0">
+
+                        <img src="./images/quincecreative-iphone-3566121_1920.jpg">
+
+                    </div> -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="products" class="py-5 bg-red-100">
+
+            <div class="container">
+
+                <!-- Section Heading -->
+
+                <h2 class="text-center fw-bold text-blue-900">
+                    Our Products
+                </h2>
+
+                <p class="text-center mb-5">
+                    Choose from our collection of latest smartphones.
+                </p>
+
+
+                <!-- Product Cards -->
+
+                <div class="row g-4 ">
+
+
+                    <!-- Product 1 -->
+
+                    <div class="col-12 col-md-6 col-lg-4 ">
+
+                        <div class="card h-100 shadow hover:scale-105 transition duration-300">
+
+                            <img src="data:image/avif;base64,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"
+                                class="card-img-top product-image" alt="iPhone">
+
+                            <div class="card-body bg-purple-200 text-center">
+
+                                <h3 class="card-title fs-4">
+                                    iPhone 16
+                                </h3>
+
+                                <p class="text-secondary">
+                                    Apple
+                                </p>
+
+                                <p class="fw-bold fs-5">
+                                    ₹79,999
+                                </p>
+
+                                <!-- View Details Button -->
+
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#iphoneModal">
+
+                                    View Details
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 2 -->
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <div class="card h-80 shadow hover:scale-105 transition duration-300">
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbmOMysmyLj4s03H4YNUgK1PVpiucYzcp2gkzi4u2pPg&s=10"
+                                class="card-img-top product-image img-fluid " alt="Samsung phone">
+
+                            <div class="card-body bg-purple-200 text-center">
+
+                                <h3 class="card-title fs-4">
+                                    Samsung Galaxy S25
+                                </h3>
+
+                                <p class="text-secondary">
+                                    Samsung
+                                </p>
+
+                                <p class="fw-bold fs-5">
+                                    ₹74,999
+                                </p>
+
+                                <!-- View Details Button -->
+
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#samsungModal">
+
+                                    View Details
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 3 -->
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <div class="card h-80 bg-red-900 shadow hover:scale-105 transition duration-300">
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIA17KevtXqMi0MH2wTabIXvSv5oQdCzLiTvnC7u1Q2A&s=10"
+                                class="card-img-top product-image img-fluid" alt="OnePlus phone">
+
+                            <div class="card-body bg-purple-200 text-center">
+
+                                <h3 class="card-title fs-4">
+                                    OnePlus 13
+                                </h3>
+
+                                <p class="text-secondary">
+                                    OnePlus
+                                </p>
+
+                                <p class="fw-bold fs-5">
+                                    ₹69,999
+                                </p>
+
+                                <!-- View Details Button -->
+
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#oneplusModal">
+
+                                    View Details
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <br><br>
+                <div class="row g-4 ">
+
+
+                    <!-- Product 1 -->
+
+                    <div class="col-12 col-md-6 col-lg-4 ">
+
+                        <div class="card h-100 shadow hover:scale-105 transition duration-300">
+
+                            <img src="data:image/avif;base64,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"
+                                class="card-img-top product-image" alt="iPhone">
+
+                            <div class="card-body bg-purple-200 text-center">
+
+                                <h3 class="card-title fs-4">
+                                    iPhone 16
+                                </h3>
+
+                                <p class="text-secondary">
+                                    Apple
+                                </p>
+
+                                <p class="fw-bold fs-5">
+                                    ₹79,999
+                                </p>
+
+                                <!-- View Details Button -->
+
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#iphoneModal">
+
+                                    View Details
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 2 -->
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <div class="card h-80 shadow hover:scale-105 transition duration-300">
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbmOMysmyLj4s03H4YNUgK1PVpiucYzcp2gkzi4u2pPg&s=10"
+                                class="card-img-top product-image img-fluid " alt="Samsung phone">
+
+                            <div class="card-body bg-purple-200 text-center">
+
+                                <h3 class="card-title fs-4">
+                                    Samsung Galaxy S25
+                                </h3>
+
+                                <p class="text-secondary">
+                                    Samsung
+                                </p>
+
+                                <p class="fw-bold fs-5">
+                                    ₹74,999
+                                </p>
+
+                                <!-- View Details Button -->
+
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#samsungModal">
+
+                                    View Details
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 3 -->
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <div class="card h-80 bg-red-900 shadow hover:scale-105 transition duration-300">
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIA17KevtXqMi0MH2wTabIXvSv5oQdCzLiTvnC7u1Q2A&s=10"
+                                class="card-img-top product-image img-fluid" alt="OnePlus phone">
+
+                            <div class="card-body bg-purple-200 text-center">
+
+                                <h3 class="card-title fs-4">
+                                    OnePlus 13
+                                </h3>
+
+                                <p class="text-secondary">
+                                    OnePlus
+                                </p>
+
+                                <p class="fw-bold fs-5">
+                                    ₹69,999
+                                </p>
+
+                                <!-- View Details Button -->
+
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#oneplusModal">
+
+                                    View Details
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="about" class="py-5 bg-red-100">
+
+            ```
+            <div class="container">
+
+                <!-- About Heading -->
+
+                <div class="text-center mb-5">
+
+                    <h2 class="fw-bold text-primary">
+                        About MobileHub
+                    </h2>
+
+                    <p class="text-secondary">
+                        Your trusted place to explore the latest smartphones.
+                    </p>
+
+                </div>
+
+
+                <div class="row align-items-center g-4">
+
+                    <!-- About Image -->
+
+                    <div class="col-12 col-md-6 text-center">
+
+                        <img src="./images/haider1259-workstation-7289426_1920.jpg" class="img-fluid rounded shadow"
+                            alt="Mobile phones">
+
+                    </div>
+
+
+                    <!-- About Content -->
+
+                    <div class="col-12 col-md-6">
+
+                        <h3 class="fw-bold text-blue-900">
+                            Technology Made Simple
+                        </h3>
+
+                        <p class="mt-3 text-secondary">
+
+                            MobileHub is a modern mobile phone store created
+                            to help customers discover smartphones from
+                            popular brands in one place.
+
+                        </p>
+
+                        <p class="text-secondary">
+
+                            We offer a variety of smartphones with different
+                            designs, features, storage options, and price
+                            ranges. Whether you need a phone for photography,
+                            gaming, entertainment, or everyday use, you can
+                            explore different options at MobileHub.
+
+                        </p>
+
+                        <p class="text-secondary">
+
+                            Our goal is to make choosing a smartphone simple
+                            and convenient by providing clear product details,
+                            specifications, and prices.
+
+                        </p>
+
+
+                        <!-- Small Features -->
+
+                        <div class="row mt-4 g-3">
+
+                            <div class="col-6">
+
+                                <div class="border rounded p-3 text-center
+                                hover:shadow-lg transition">
+
+                                    <h4 class="fw-bold text-primary">
+                                        10+
+                                    </h4>
+
+                                    <p class="mb-0">
+                                        Smartphone Models
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-6">
+
+                                <div class="border rounded p-3 text-center
+                                hover:shadow-lg transition">
+
+                                    <h4 class="fw-bold text-primary">
+                                        5+
+                                    </h4>
+
+                                    <p class="mb-0">
+                                        Popular Brands
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            ```
+
+        </section>
+
+
+        <section id="contact">
+
+
+
+        </section>
+    </main>
+
+    <footer class="text-center text-lg-start bg-red-400 text-muted">
+
+```
+<!--  SOCIAL MEDIA -->
+
+<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-red-400">
+
+    <!-- Left -->
+
+    <div class="me-5 d-none d-lg-block">
+
+        <span>
+            Get connected with MobileHub on social networks:
+        </span>
+
+    </div>
+
+
+    <!-- Right -->
+
+    <div>
+
+        <a href="#" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="#" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="#" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="#" class="me-4 text-reset">
+            <i class="fab fa-youtube"></i>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER CONTENT  -->
+
+<section class="bg-red-300">
+
+    <div class="container text-center text-md-start mt-5">
+
+        <div class="row mt-3">
+
+
+            <!-- MOBILEHUB  -->
+
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                <h6 class="text-uppercase fw-bold mb-4">
+
+                    <i class="fas fa-mobile-alt me-3"></i>
+                    MobileHub
+
+                </h6>
+
+                <p>
+
+                    MobileHub is a simple and reliable mobile phone
+                    store where you can explore smartphones from
+                    popular brands.
+
+                </p>
+
+                <p>
+
+                    We offer smartphones with different features,
+                    specifications and price ranges to help you
+                    find the right phone for your needs.
+
+                </p>
+
+            </div>
+
+
+            <!--  PRODUCTS  -->
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <h6 class="text-uppercase fw-bold mb-4">
+                    Products
+                </h6>
+
+                <p>
+                    <a href="#products" class="text-reset">
+                        iPhone
+                    </a>
+                </p>
+
+                <p>
+                    <a href="#products" class="text-reset">
+                        Samsung
+                    </a>
+                </p>
+
+                <p>
+                    <a href="#products" class="text-reset">
+                        OnePlus
+                    </a>
+                </p>
+
+                <p>
+                    <a href="#products" class="text-reset">
+                        Latest Phones
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!--  USEFUL LINKS  -->
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <h6 class="text-uppercase fw-bold mb-4">
+                    Quick Links
+                </h6>
+
+                <p>
+                    <a href="#home" class="text-reset">
+                        Home
+                    </a>
+                </p>
+
+                <p>
+                    <a href="#products" class="text-reset">
+                        Products
+                    </a>
+                </p>
+
+                <p>
+                    <a href="#about" class="text-reset">
+                        About Us
+                    </a>
+                </p>
+
+                <p>
+                    <a href="#contact" class="text-reset">
+                        Contact
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!-- CONTACT-->
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                <h6 class="text-uppercase fw-bold mb-4">
+                    Contact
+                </h6>
+
+                <p>
+                    <i class="fas fa-home me-3"></i>
+                    Kochi, Kerala, India
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    mobilehub@gmail.com
+                </p>
+
+                <p>
+                    <i class="fas fa-phone me-3"></i>
+                    +91 98765 43210
+                </p>
+
+                <p>
+                    <i class="fas fa-clock me-3"></i>
+                    Mon - Sat: 9:00 AM - 8:00 PM
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COPYRIGHT -->
+
+<div class="text-center p-4"
+    style="background-color: rgba(0, 0, 0, 0.05);">
+
+    © 2026 Copyright:
+
+    <span class="fw-bold">
+        MobileHub
+    </span>
+
+</div>
+```
+
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden
+}
+
+#home{
+    background-image:url(./images/quincecreative-iphone-3566121_1920.jpg);
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    z-index: inherit;
+}
+.navbar .collapse {
+    visibility: visible !important;
+}
