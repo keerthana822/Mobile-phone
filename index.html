@@ -49,48 +49,44 @@
 
     <!-- header -->
 
+
     <header>
-        <nav class=" navbar navbar-expand-lg bg-pink-950 fixed-top">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container ">
 
-                <a class="navbar-brand fs-2 fw-bold !text-yellow-200" href="#">
-                    Mobile Hub
-                </a>
+                <a class="navbar-brand fs-2 fw-bold" style="color: rgb(241, 236, 222);">MobileHub</a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                <!-- Toggle Button -->
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                     aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon bg-red-50"></span>
                 </button>
 
+                <!-- Navbar Content -->
                 <div class="collapse navbar-collapse" id="navbarContent">
 
-                    <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-4">
+                    <ul class="nav justify-content-center flex-grow-1">
 
                         <li class="nav-item">
-                            <a class="nav-link fw-bold !text-red-100 fs-4" href="#home">Home</a>
+                            <a class="nav-link text-white fw-semibold fs-5 hover-light" href="#home">Home</a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link fw-bold !text-red-100 fs-4" href="#products">Products</a>
+                            <a class="nav-link text-white fw-semibold fs-5 hover-light" href="#products">Products</a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link fw-bold !text-red-100 fs-4" href="#about">About</a>
+                            <a class="nav-link text-white fw-semibold fs-5 hover-light" href="#about">About</a>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link fw-bold !text-red-100 fs-4" href="#contact">Contact</a>
+                            <a class="nav-link text-white fw-semibold fs-5 hover-light" href="#contact">contact</a>
                         </li>
 
                     </ul>
 
                     <form class="d-flex" role="search">
-                        <input class="form-control me-3" type="search" placeholder="Search">
-
-                        <button class="btn btn-success w-24 " type="submit">
-                            Search
-                        </button>
+                        <input class="form-control me-2" style="background-color: #b6d8de;" type="search"
+                            placeholder="Search" aria-label="Search" />
+                        <button class="btn text-white  " style="background-color: #2f8daa;"
+                            type="submit">Search</button>
                     </form>
 
                 </div>
@@ -98,61 +94,66 @@
         </nav>
     </header>
 
+
     <main>
-       
 
-        <section id="home" class="banner-section">
 
-            <div class="container h-75">
 
-                <div class="row align-items-center min-vh-100 pt-5">
 
-                    <!-- Banner Content -->
+        <div class="banner min-h-[600px] flex items-center" style="background:
+     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+     url('./images/Futuristic\ Blue\ Smartphone\ Duo.png');
+     background-size: cover;
+     background-position: center;">
 
-                    <div class="col-12 col-md-6 text-center text-md-start">
+            <div class="w-full flex items-center justify-start
+                px-5 sm:px-10 md:px-10 lg:px-16">
 
-                        <h1 class="display-4 fw-bold !text-blue-900">
-                            Find Your Perfect Smartphone
-                        </h1>
+                <div class="text-left py-16 md:py-24 lg:py-32">
 
-                        <p class="fs-5 mt-3 text-white" >
-                            Explore the latest smartphones from trusted brands
-                            at affordable prices.
-                        </p>
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl!
+                       py-2 font-extrabold text-white leading-tight">
+                        Upgrade Your <br>
+                        <span class="text-sky-400">Mobile Experience</span>
+                    </h1>
 
-                        <a href="#products" class="btn btn-primary px-4 py-2 mt-3">
-                            Shop Now
-                        </a>
+                    <h2 class="text-lg sm:text-xl md:text-2xl md:text-4xl!
+                       font-bold text-white mt-4 md:mt-6 leading-tight">
+                        Power. Style. Innovation.
+                    </h2>
 
+                    <p class="text-sm sm:text-base md:text-lg text-gray-300
+                      mt-4 md:mt-6 max-w-xl leading-relaxed">
+                        Discover the latest smartphones from top brands.
+                        Experience stunning cameras, powerful performance,
+                        and cutting-edge technology — all in one place.
+                    </p>
+
+                    <p class="text-xs sm:text-sm font-semibold text-gray-400 mt-5">
+                        LATEST SMARTPHONES · TRUSTED BRANDS · PREMIUM QUALITY
+                    </p>
+
+                    <div class="mt-6">
+                        <button class="bg-sky-400 text-red-50 p-2 rounded-xl">Shop Now</button>
                     </div>
 
-
-                    <!-- Banner Image -->
-
-                    <!-- <div class="col-12 col-md-6 text-center mt-5 mt-md-0">
-
-                        <img src="./images/quincecreative-iphone-3566121_1920.jpg">
-
-                    </div> -->
-
                 </div>
-
             </div>
+        </div>
 
-        </section>
 
 
-        <section id="products" class="py-5 bg-red-100">
+        <section id="products" class="py-5 " style="background-color: rgb(43, 60, 76);">
 
             <div class="container">
 
                 <!-- Section Heading -->
 
-                <h2 class="text-center fw-bold text-blue-900">
+                <h2 class="text-center fw-bold !text-blue-50 leading-tight">
                     Our Products
                 </h2>
 
-                <p class="text-center mb-5">
+                <p class="text-center mb-5 !text-blue-50">
                     Choose from our collection of latest smartphones.
                 </p>
 
@@ -166,12 +167,12 @@
 
                     <div class="col-12 col-md-6 col-lg-4 ">
 
-                        <div class="card h-100 shadow hover:scale-105 transition duration-300">
+                        <div class="card h-100 border-5 !border-sky-200 shadow !rounded-2xl">
 
                             <img src="data:image/avif;base64,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"
                                 class="card-img-top product-image" alt="iPhone">
 
-                            <div class="card-body bg-purple-200 text-center">
+                            <div class="card-body bg-blue-200 text-center">
 
                                 <h3 class="card-title fs-4">
                                     iPhone 16
@@ -187,12 +188,45 @@
 
                                 <!-- View Details Button -->
 
+                                <!-- Button trigger modal -->
+
+                                <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#iphoneModal">
-
-                                    View Details
-
+                                    data-bs-target="#exampleModal">
+                                    View details
                                 </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class=" modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <img src="data:image/avif;base64,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"
+                                                    class="card-img-top product-image" alt="iPhone">
+
+
+
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+
+
+                                            <div class="modal-body  ">
+                                                <h2><span class="text-blue-900">Mobile Name:</span> iPhone 16</h2>
+                                                <h4><span class="text-blue-900">Price:</span>₹79,999</h4>
+                                                <h4><span class="text-blue-900">Storage:</span>128 GB </h4>
+                                                <h4><span class="text-blue-900">RAM:</span>8 GB </h4>
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Confirm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                             </div>
 
@@ -205,12 +239,12 @@
 
                     <div class="col-12 col-md-6 col-lg-4">
 
-                        <div class="card h-80 shadow hover:scale-105 transition duration-300">
+                        <div class="card  h-100 border-4 !border-sky-200 shadow  !rounded-2xl">
 
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbmOMysmyLj4s03H4YNUgK1PVpiucYzcp2gkzi4u2pPg&s=10"
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQouUbEBQCOxHUOZMMXJvGrEApq3Wr5ZvrD4nqUNhFt3Q&s=10"
                                 class="card-img-top product-image img-fluid " alt="Samsung phone">
 
-                            <div class="card-body bg-purple-200 text-center">
+                            <div class="card-body bg-blue-200 text-center">
 
                                 <h3 class="card-title fs-4">
                                     Samsung Galaxy S25
@@ -227,11 +261,41 @@
                                 <!-- View Details Button -->
 
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#samsungModal">
-
-                                    View Details
-
+                                    data-bs-target="#exampleModal1">
+                                    View details
                                 </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal1" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class=" modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQouUbEBQCOxHUOZMMXJvGrEApq3Wr5ZvrD4nqUNhFt3Q&s=10"
+                                                    class="card-img-top product-image img-fluid " alt="Samsung phone">
+
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+
+
+                                            <div class="modal-body  ">
+                                                <h2><span class="text-blue-900">Mobile Name:</span> Samsung Galaxy S25
+                                                </h2>
+                                                <h4><span class="text-blue-900">Price:</span>₹74,999</h4>
+                                                <h4><span class="text-blue-900">Storage:</span>256 GB </h4>
+                                                <h4><span class="text-blue-900">RAM:</span>12 GB </h4>
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Confirm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                             </div>
 
@@ -244,12 +308,12 @@
 
                     <div class="col-12 col-md-6 col-lg-4">
 
-                        <div class="card h-80 bg-red-900 shadow hover:scale-105 transition duration-300">
+                        <div class="card  h-100   border-4 !border-sky-200 shadow  !rounded-2xl">
 
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIA17KevtXqMi0MH2wTabIXvSv5oQdCzLiTvnC7u1Q2A&s=10"
                                 class="card-img-top product-image img-fluid" alt="OnePlus phone">
 
-                            <div class="card-body bg-purple-200 text-center">
+                            <div class="card-body bg-blue-200 text-center">
 
                                 <h3 class="card-title fs-4">
                                     OnePlus 13
@@ -266,11 +330,41 @@
                                 <!-- View Details Button -->
 
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#oneplusModal">
-
-                                    View Details
-
+                                    data-bs-target="#exampleModal2">
+                                    View details
                                 </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal2" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class=" modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+
+
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIA17KevtXqMi0MH2wTabIXvSv5oQdCzLiTvnC7u1Q2A&s=10"
+                                                    class="card-img-top product-image img-fluid" alt="OnePlus phone">
+
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+
+
+                                            <div class="modal-body  ">
+                                                <h2><span class="text-blue-900">Mobile Name:</span> OnePlus 13</h2>
+                                                <h4><span class="text-blue-900">Price:</span>₹69,999</h4>
+                                                <h4><span class="text-blue-900">Storage:</span>256 GB </h4>
+                                                <h4><span class="text-blue-900">RAM:</span>12 GB </h4>
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Confirm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                             </div>
 
@@ -287,33 +381,65 @@
 
                     <div class="col-12 col-md-6 col-lg-4 ">
 
-                        <div class="card h-100 shadow hover:scale-105 transition duration-300">
+                        <div class="card h-100 border-5 !border-sky-200 shadow !rounded-2xl">
 
-                            <img src="data:image/avif;base64,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"
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbrxrcf1DT_O6LxZuu1a1NcQiWuYTCUKUfOJ5hHnQRYA&s=10"
                                 class="card-img-top product-image" alt="iPhone">
 
-                            <div class="card-body bg-purple-200 text-center">
+                            <div class="card-body bg-blue-200 text-center">
 
                                 <h3 class="card-title fs-4">
-                                    iPhone 16
+                                    Google Pixel 10
+
                                 </h3>
 
-                                <p class="text-secondary">
-                                    Apple
+                                <p class="text-secondary ">
+                                    Google
                                 </p>
 
                                 <p class="fw-bold fs-5">
-                                    ₹79,999
+                                    ₹74,999
                                 </p>
 
                                 <!-- View Details Button -->
-
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#iphoneModal">
-
-                                    View Details
-
+                                    data-bs-target="#exampleModal3">
+                                    View details
                                 </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal3" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class=" modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbrxrcf1DT_O6LxZuu1a1NcQiWuYTCUKUfOJ5hHnQRYA&s=10"
+                                                    class="card-img-top product-image" alt="iPhone">
+
+
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+
+
+                                            <div class="modal-body  ">
+                                                <h2><span class="text-blue-900">Mobile Name:</span> Google Pixel 10</h2>
+                                                <h4><span class="text-blue-900">Price:</span>₹74,999</h4>
+                                                <h4><span class="text-blue-900">Storage:</span>128 GB </h4>
+                                                <h4><span class="text-blue-900">RAM:</span>12 GB </h4>
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Confirm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
 
                             </div>
 
@@ -326,33 +452,64 @@
 
                     <div class="col-12 col-md-6 col-lg-4">
 
-                        <div class="card h-80 shadow hover:scale-105 transition duration-300">
+                        <div class="card  h-100 border-4 !border-sky-200 shadow  !rounded-2xl">
 
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbmOMysmyLj4s03H4YNUgK1PVpiucYzcp2gkzi4u2pPg&s=10"
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKXr7vgMQ6rDGyPTno0V6NWsDeQxY_9hATLrkHg3eTqg&s=10"
                                 class="card-img-top product-image img-fluid " alt="Samsung phone">
 
-                            <div class="card-body bg-purple-200 text-center">
+                            <div class="card-body bg-blue-200 text-center">
 
                                 <h3 class="card-title fs-4">
-                                    Samsung Galaxy S25
+                                    Xiaomi 15
                                 </h3>
 
                                 <p class="text-secondary">
-                                    Samsung
+                                    Xiaomi
                                 </p>
 
                                 <p class="fw-bold fs-5">
-                                    ₹74,999
+                                    ₹67,999
                                 </p>
 
                                 <!-- View Details Button -->
 
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#samsungModal">
-
-                                    View Details
-
+                                    data-bs-target="#exampleModal4">
+                                    View details
                                 </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal4" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class=" modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKXr7vgMQ6rDGyPTno0V6NWsDeQxY_9hATLrkHg3eTqg&s=10"
+                                                    class="card-img-top product-image img-fluid " alt="Samsung phone">
+
+
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+
+
+                                            <div class="modal-body  ">
+                                                <h2><span class="text-blue-900">Mobile Name:</span> Xiaomi 15</h2>
+                                                <h4><span class="text-blue-900">Price:</span>₹67,999</h4>
+                                                <h4><span class="text-blue-900">Storage:</span>512 GB </h4>
+                                                <h4><span class="text-blue-900">RAM:</span>12 GB </h4>
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Confirm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
 
                             </div>
 
@@ -365,33 +522,63 @@
 
                     <div class="col-12 col-md-6 col-lg-4">
 
-                        <div class="card h-80 bg-red-900 shadow hover:scale-105 transition duration-300">
+                        <div class="card  h-100   border-4 !border-sky-200 shadow  !rounded-2xl">
 
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIA17KevtXqMi0MH2wTabIXvSv5oQdCzLiTvnC7u1Q2A&s=10"
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ8KGEsUL9tPc879a1Urvq751adSnHmUEiDXlDCrxy6Q&s=10"
                                 class="card-img-top product-image img-fluid" alt="OnePlus phone">
 
-                            <div class="card-body bg-purple-200 text-center">
+                            <div class="card-body bg-blue-200 text-center">
 
                                 <h3 class="card-title fs-4">
-                                    OnePlus 13
+                                    Nothing Phone
                                 </h3>
 
                                 <p class="text-secondary">
-                                    OnePlus
+                                    Nothing
                                 </p>
 
                                 <p class="fw-bold fs-5">
-                                    ₹69,999
+                                    ₹59,999
                                 </p>
 
                                 <!-- View Details Button -->
 
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#oneplusModal">
-
-                                    View Details
-
+                                    data-bs-target="#exampleModal5">
+                                    View details
                                 </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal5" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class=" modal-dialog modal-dialog-centered ">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ8KGEsUL9tPc879a1Urvq751adSnHmUEiDXlDCrxy6Q&s=10"
+                                                    class="card-img-top product-image img-fluid" alt="OnePlus phone">
+
+
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+
+
+                                            <div class="modal-body  ">
+                                                <h2><span class="text-blue-900">Mobile Name:</span> Nothing Phone</h2>
+                                                <h4><span class="text-blue-900">Price:</span>₹59,999</h4>
+                                                <h4><span class="text-blue-900">Storage:</span>256 GB </h4>
+                                                <h4><span class="text-blue-900">RAM:</span>12 GB </h4>
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Confirm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                             </div>
 
@@ -405,20 +592,20 @@
 
         </section>
 
-        <section id="about" class="py-5 bg-red-100">
+        <section id="about" class="py-5" style="background-color: rgb(43, 60, 76);">
 
-            ```
+            
             <div class="container">
 
                 <!-- About Heading -->
 
                 <div class="text-center mb-5">
 
-                    <h2 class="fw-bold text-primary">
+                    <h2 class="fw-bold text-primary !text-blue-50">
                         About MobileHub
                     </h2>
 
-                    <p class="text-secondary">
+                    <p class="text-secondary !text-blue-50">
                         Your trusted place to explore the latest smartphones.
                     </p>
 
@@ -431,7 +618,7 @@
 
                     <div class="col-12 col-md-6 text-center">
 
-                        <img src="./images/haider1259-workstation-7289426_1920.jpg" class="img-fluid rounded shadow"
+                        <img src="./images/quincecreative-iphone-3566121_1920.jpg" class="img-fluid rounded shadow"
                             alt="Mobile phones">
 
                     </div>
@@ -441,11 +628,11 @@
 
                     <div class="col-12 col-md-6">
 
-                        <h3 class="fw-bold text-blue-900">
+                        <h3 class="fw-bold !text-sky-200">
                             Technology Made Simple
                         </h3>
 
-                        <p class="mt-3 text-secondary">
+                        <p class="mt-3 !text-sky-50">
 
                             MobileHub is a modern mobile phone store created
                             to help customers discover smartphones from
@@ -453,7 +640,7 @@
 
                         </p>
 
-                        <p class="text-secondary">
+                        <p class="text-secondary !text-sky-50">
 
                             We offer a variety of smartphones with different
                             designs, features, storage options, and price
@@ -463,7 +650,7 @@
 
                         </p>
 
-                        <p class="text-secondary">
+                        <p class="text-secondary !text-sky-50">
 
                             Our goal is to make choosing a smartphone simple
                             and convenient by providing clear product details,
@@ -471,21 +658,17 @@
 
                         </p>
 
-
-                        <!-- Small Features -->
-
                         <div class="row mt-4 g-3">
 
                             <div class="col-6">
 
-                                <div class="border rounded p-3 text-center
-                                hover:shadow-lg transition">
+                                <div class="border rounded p-3 text-center bg-sky-50">
 
                                     <h4 class="fw-bold text-primary">
                                         10+
                                     </h4>
 
-                                    <p class="mb-0">
+                                    <p class="mb-0 !text-blue-900 font-bold" >
                                         Smartphone Models
                                     </p>
 
@@ -496,14 +679,13 @@
 
                             <div class="col-6">
 
-                                <div class="border rounded p-3 text-center
-                                hover:shadow-lg transition">
+                                <div class="border rounded p-3 text-center bg-sky-50">
 
                                     <h4 class="fw-bold text-primary">
                                         5+
                                     </h4>
 
-                                    <p class="mb-0">
+                                    <p class="mb-0 !text-blue-900 font-bold">
                                         Popular Brands
                                     </p>
 
@@ -522,222 +704,237 @@
 
         </section>
 
+<section id="contact" class="py-4" style="background-color: rgb(43, 60, 76);">
+    <div class="container text-center border-4 border-sky-900 bg-sky-100 p-2">
 
-        <section id="contact">
+        <h3 class="!text-blue-900 fw-bold">Contact Us</h3>
+        <p class="text-secondary">Have a question? We'd love to hear from you.</p>
 
+        <form class="mx-auto" style="max-width: 500px;">
+            <input type="email" class="form-control mb-3"
+                   placeholder="Your Email" required>
 
+            <textarea class="form-control mb-3"
+                      placeholder="Your Message" required></textarea>
 
-        </section>
+            <button type="submit" class="btn text-white"
+                    style="background-color: #4cb1bd;">
+                Send Message
+            </button>
+        </form>
+
+    </div>
+</section>
+
     </main>
 
-    <footer class="text-center text-lg-start bg-red-400 text-muted">
+    <footer class="text-center text-lg-start bg-sky-800 text-muted">
 
-```
-<!--  SOCIAL MEDIA -->
+       
+        <!--  SOCIAL MEDIA -->
 
-<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-red-400">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom  bg-sky-800">
 
-    <!-- Left -->
+            <!-- Left -->
 
-    <div class="me-5 d-none d-lg-block">
+            <div class="me-5 d-none d-lg-block">
 
-        <span>
-            Get connected with MobileHub on social networks:
-        </span>
-
-    </div>
-
-
-    <!-- Right -->
-
-    <div>
-
-        <a href="#" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-
-        <a href="#" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-        </a>
-
-        <a href="#" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
-        </a>
-
-        <a href="#" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
-        </a>
-
-        <a href="#" class="me-4 text-reset">
-            <i class="fab fa-youtube"></i>
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- FOOTER CONTENT  -->
-
-<section class="bg-red-300">
-
-    <div class="container text-center text-md-start mt-5">
-
-        <div class="row mt-3">
-
-
-            <!-- MOBILEHUB  -->
-
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-
-                <h6 class="text-uppercase fw-bold mb-4">
-
-                    <i class="fas fa-mobile-alt me-3"></i>
-                    MobileHub
-
-                </h6>
-
-                <p>
-
-                    MobileHub is a simple and reliable mobile phone
-                    store where you can explore smartphones from
-                    popular brands.
-
-                </p>
-
-                <p>
-
-                    We offer smartphones with different features,
-                    specifications and price ranges to help you
-                    find the right phone for your needs.
-
-                </p>
+                <span class="!text-red-50">
+                    Get connected with MobileHub on social networks:
+                </span>
 
             </div>
 
 
-            <!--  PRODUCTS  -->
+            <!-- Right -->
 
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div>
 
-                <h6 class="text-uppercase fw-bold mb-4">
-                    Products
-                </h6>
+                <a href="#" class="me-4 text-reset !text-red-50">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
 
-                <p>
-                    <a href="#products" class="text-reset">
-                        iPhone
-                    </a>
-                </p>
+                <a href="#" class="me-4 text-reset !text-red-50">
+                    <i class="fab fa-twitter"></i>
+                </a>
 
-                <p>
-                    <a href="#products" class="text-reset">
-                        Samsung
-                    </a>
-                </p>
+                <a href="#" class="me-4 text-reset !text-red-50">
+                    <i class="fab fa-instagram"></i>
+                </a>
 
-                <p>
-                    <a href="#products" class="text-reset">
-                        OnePlus
-                    </a>
-                </p>
+                <a href="#" class="me-4 text-reset !text-red-50">
+                    <i class="fab fa-linkedin"></i>
+                </a>
 
-                <p>
-                    <a href="#products" class="text-reset">
-                        Latest Phones
-                    </a>
-                </p>
+                <a href="#" class="me-4 text-reset !text-red-50">
+                    <i class="fab fa-youtube"></i>
+                </a>
 
             </div>
 
+        </section>
 
-            <!--  USEFUL LINKS  -->
 
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <!-- FOOTER CONTENT  -->
 
-                <h6 class="text-uppercase fw-bold mb-4">
-                    Quick Links
-                </h6>
+        <section class=" bg-sky-600">
 
-                <p>
-                    <a href="#home" class="text-reset">
-                        Home
-                    </a>
-                </p>
+            <div class="container text-center text-md-start mt-5">
 
-                <p>
-                    <a href="#products" class="text-reset">
-                        Products
-                    </a>
-                </p>
+                <div class="row mt-3">
 
-                <p>
-                    <a href="#about" class="text-reset">
-                        About Us
-                    </a>
-                </p>
 
-                <p>
-                    <a href="#contact" class="text-reset">
-                        Contact
-                    </a>
-                </p>
+                    <!-- MOBILEHUB  -->
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4 !text-red-50">
+
+                            <i class="fas fa-mobile-alt me-3"></i>
+                            MobileHub
+
+                        </h6>
+
+                        <p class="!text-red-50">
+
+                            MobileHub is a simple and reliable mobile phone
+                            store where you can explore smartphones from
+                            popular brands.
+
+                        </p>
+
+                        <p class="!text-red-50">
+
+                            We offer smartphones with different features,
+                            specifications and price ranges to help you
+                            find the right phone for your needs.
+
+                        </p>
+
+                    </div>
+
+
+                    <!--  PRODUCTS  -->
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4 !text-red-50">
+                            Products
+                        </h6>
+
+                        <p>
+                            <a href="#products" class="text-reset !text-red-50">
+                                iPhone
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="#products" class="text-reset !text-red-50">
+                                Samsung
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="#products" class="text-reset !text-red-50">
+                                OnePlus
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="#products" class="text-reset !text-red-50">
+                                Latest Phones
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                    <!--  USEFUL LINKS  -->
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4 !text-red-50">
+                            Quick Links
+                        </h6>
+
+                        <p>
+                            <a href="#home" class="text-rese !text-red-50t">
+                                Home
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="#products" class="text-reset !text-red-50" >
+                                Products
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="#about" class="text-reset !text-red-50">
+                                About Us
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="#contact" class="text-reset !text-red-50">
+                                Contact
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                    <!-- CONTACT-->
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4 !text-red-50">
+                            Contact
+                        </h6>
+
+                        <p class="!text-red-50">
+                            <i class="fas fa-home me-3 !text-red-50"></i>
+                            Kochi, Kerala, India
+                        </p>
+
+                        <p class="!text-red-50">
+                            <i class="fas fa-envelope me-3 !text-red-50"></i>
+                            mobilehub@gmail.com
+                        </p>
+
+                        <p class="!text-red-50">
+                            <i class="fas fa-phone me-3 !text-red-50"></i>
+                            +91 98765 43210
+                        </p>
+
+                        <p class="!text-red-50">
+                            <i class="fas fa-clock me-3 !text-red-50"></i>
+                            Mon - Sat: 9:00 AM - 8:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
 
             </div>
 
+        </section>
 
-            <!-- CONTACT-->
 
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <!-- COPYRIGHT -->
 
-                <h6 class="text-uppercase fw-bold mb-4">
-                    Contact
-                </h6>
+        <div class="text-center p-4 text-red-50" >
 
-                <p>
-                    <i class="fas fa-home me-3"></i>
-                    Kochi, Kerala, India
-                </p>
+            © 2026 Copyright:
 
-                <p>
-                    <i class="fas fa-envelope me-3"></i>
-                    mobilehub@gmail.com
-                </p>
-
-                <p>
-                    <i class="fas fa-phone me-3"></i>
-                    +91 98765 43210
-                </p>
-
-                <p>
-                    <i class="fas fa-clock me-3"></i>
-                    Mon - Sat: 9:00 AM - 8:00 PM
-                </p>
-
-            </div>
+            <span class="fw-bold !text-red-50">
+                MobileHub
+            </span>
 
         </div>
+       
 
-    </div>
-
-</section>
-
-
-<!-- COPYRIGHT -->
-
-<div class="text-center p-4"
-    style="background-color: rgba(0, 0, 0, 0.05);">
-
-    © 2026 Copyright:
-
-    <span class="fw-bold">
-        MobileHub
-    </span>
-
-</div>
-```
-
-</footer>
+    </footer>
 
 </body>
 
